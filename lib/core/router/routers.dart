@@ -1,6 +1,6 @@
 import 'package:clean_arc/core/router/router_path.dart';
 import 'package:clean_arc/core/services/di/service_locator.dart';
-import 'package:clean_arc/pages/app.dart';
+import 'package:clean_arc/pages/app/app.dart';
 import 'package:clean_arc/pages/home/cubits/home/home_cubit.dart';
 import 'package:clean_arc/pages/home/home_page.dart';
 import 'package:clean_arc/pages/product/product_page.dart';

@@ -1,0 +1,7 @@
+syntax = "proto3";
+option java_package = "com.hodoan.apps_flyer";
+option java_outer_classname = "ProtobufModel";
+
+message ModelAppFlyer{
+    map<string,string> values = 4;
+}

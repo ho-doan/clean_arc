@@ -11,8 +11,10 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
-import '../../../pages/home/cubits/home/home_cubit.dart' as _i4;
-import '../../../pages/home/cubits/location/location_cubit.dart' as _i3;
+import '../../../pages/app/cubit/app_cubit.dart' as _i3;
+import '../../../pages/home/cubits/home/home_cubit.dart' as _i6;
+import '../../../pages/home/cubits/location/location_cubit.dart' as _i5;
+import '../share_preferences/share_preferences_helper.dart' as _i4;
 
 // initializes the registration of main-scope dependencies inside of GetIt
 _i1.GetIt $initGetIt(
@@ -25,7 +27,9 @@ _i1.GetIt $initGetIt(
     environment,
     environmentFilter,
   );
-  gh.factory<_i3.LocationCubit>(() => _i3.LocationCubit());
-  gh.factory<_i4.HomeCubit>(() => _i4.HomeCubit(gh<_i3.LocationCubit>()));
+  gh.factory<_i3.AppCubit>(
+      () => _i3.AppCubit(gh<_i4.SharedPreferencesHelper>()));
+  gh.factory<_i5.LocationCubit>(() => _i5.LocationCubit());
+  gh.factory<_i6.HomeCubit>(() => _i6.HomeCubit(gh<_i5.LocationCubit>()));
   return getIt;
 }

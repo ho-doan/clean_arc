@@ -2,6 +2,9 @@ class RoutePath {
   RoutePath._internal();
   static const String root = '/';
   static const String rootDetail = 'tab/:tab';
+  static const String rootHome = '/tab/home';
+  static const String rootProfile = '/tab/profile';
+  static const String rootProduct = '/tab/products';
   static const String home = 'home';
   static const String error = 'error';
   static const String profile = 'profile';

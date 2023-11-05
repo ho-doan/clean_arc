@@ -12,12 +12,30 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/baner.png
+  AssetGenImage get baner => const AssetGenImage('assets/images/baner.png');
+
+  /// File path: assets/images/i1.png
+  AssetGenImage get i1 => const AssetGenImage('assets/images/i1.png');
+
+  /// File path: assets/images/i2.png
+  AssetGenImage get i2 => const AssetGenImage('assets/images/i2.png');
+
+  /// File path: assets/images/i3.png
+  AssetGenImage get i3 => const AssetGenImage('assets/images/i3.png');
+
+  /// File path: assets/images/i4.png
+  AssetGenImage get i4 => const AssetGenImage('assets/images/i4.png');
+
   /// File path: assets/images/img_clean_body.png
   AssetGenImage get imgCleanBody =>
       const AssetGenImage('assets/images/img_clean_body.png');
 
+  /// File path: assets/images/logo.png
+  AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [imgCleanBody];
+  List<AssetGenImage> get values => [baner, i1, i2, i3, i4, imgCleanBody, logo];
 }
 
 class Assets {

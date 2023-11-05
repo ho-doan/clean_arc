@@ -1,0 +1,5 @@
+arb-dir: lib/core/language
+template-arb-file: app_vi.arb
+output-localization-file: s.dart
+output-class: S
+output-dir: lib/core/language/l10n
