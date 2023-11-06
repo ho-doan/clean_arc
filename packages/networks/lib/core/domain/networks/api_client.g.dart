@@ -12,7 +12,9 @@ class _ApiClient implements ApiClient {
   _ApiClient(
     this._dio, {
     this.baseUrl,
-  });
+  }) {
+    baseUrl ??= 'http://localhost:3000/';
+  }
 
   final Dio _dio;
 
@@ -32,7 +34,7 @@ class _ApiClient implements ApiClient {
     )
             .compose(
               _dio.options,
-              '/user_points',
+              '/user-scope',
               queryParameters: queryParameters,
               data: _data,
             )

@@ -30,12 +30,14 @@ dev_dependencies:
   json_serializable: ^6.7.1
   retrofit_generator: ^7.0.8
 
+flutter:
+  generate: true
+  uses-material-design: true
+
 flutter_gen:
   output: lib/gen
   line_length: 80
   assets:
     enabled: true
-    
-    
   integrations:
     flutter_svg: true

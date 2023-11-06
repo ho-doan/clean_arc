@@ -10,7 +10,9 @@ import 'core/services/di/service_locator.dart';
 
 const String appFlyerToken = 'RfmkDHieaX9xcNMN4hNvMk';
 const String appClientKey = 'apkClient';
+//http://localhost:3000 redirect to https://hi.game/?pid=1025
 const String gameUrl = 'https://hi.game/?pid=1025';
+// const String gameUrl = 'https://ho-doan.github.io/';
 
 void main() {
   runZonedGuarded(() async {
