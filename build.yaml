@@ -7,6 +7,6 @@ targets:
           # auto registers any class with a name matches the given pattern
           # class_name_pattern: "Service$|Repository$|UseCase$|RemoteDataSource$|LocalDataSource$|ApiUtil$|Bloc$|LocalDatabase$|Helper$|Online$"
           # class_name_pattern: "Service$|Repository$|UseCase$|RemoteDataSource$|LocalDataSource$|ApiUtil$|Bloc$|LocalDatabase$|Online$"
-          class_name_pattern: "Bloc$|Cubit$"
+          class_name_pattern: "Bloc$|Cubit$|DataSource$|Repository$|UseCase$"
           # auto registers any class inside a file with a
           # name matches the given pattern

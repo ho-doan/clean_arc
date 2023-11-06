@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/services/di/service_locator.dart';
 
+// cspell: disable
 const String appFlyerToken = 'RfmkDHieaX9xcNMN4hNvMk';
 const String appClientKey = 'apkClient';
 //http://localhost:3000 redirect to https://hi.game/?pid=1025

@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../../domain/networks/api_client.dart';
 import 'service_locator.config.dart'; // default auto gen
 
 final getIt = GetIt.instance;
@@ -19,7 +20,7 @@ void configureDependencies(Dio dio) {
     () => SharedPreferencesHelper(getIt<SharedPreferences>()),
   );
 
-  // getIt.registerLazySingleton<ApiClient>(() => ApiClient(dio));
+  getIt.registerLazySingleton<ApiClient>(() => ApiClient(Dio()));
   // configureDomainDependencies(getIt);
   $initGetIt(getIt);
 }

@@ -29,6 +29,9 @@ dependencies:
   shared_preferences: ^2.2.2
   uuid: ^4.1.0
   collection: ^1.17.2
+  dartz: ^0.10.1
+  retrofit: ^4.0.3
+  json_annotation: ^4.8.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -40,6 +43,8 @@ dev_dependencies:
   custom_lint: ^0.5.0
   go_router_builder: ^2.3.3
   flutter_gen_runner: ^5.2.0
+  json_serializable: ^6.7.1
+  retrofit_generator: ^7.0.8
 flutter:
   generate: true
   uses-material-design: true
